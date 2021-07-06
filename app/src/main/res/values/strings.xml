@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">HashFinder</string>
+    <string name="fio">FIO</string>
+    <string name="wait_user">Waiting for user actions</string>
+    <string name="ok">OK</string>
+    <string name="check">Check</string>
+    <string name="hash_added">Hash added</string>
+    <string name="incorrect_value">You entered an incorrect value</string>
+    <string name="export">Export</string>
+    <string name="importStr">Import</string>
+    <string name="cancel">Cancel</string>
+    <string name="hash_hint">Enter the hash</string>
+    <string name="back_to_checking">Back to checking</string>
+    <string name="export_success">The list was exported</string>
+    <string name="import_success">The list was imported</string>
+    <string name="fio_failed">Fio error</string>
+    <string name="file_not_found">File not found</string>
+    <string name="enter_file_name_without_txt">File Name without .txt</string>
 </resources>

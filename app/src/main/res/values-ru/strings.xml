@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Поиск Хешей</string>
+    <string name="fio">Файлы</string>
+    <string name="wait_user">Ожидание действий пользователя</string>
+    <string name="ok">ОК</string>
+    <string name="check">Проверить</string>
+    <string name="hash_added">Хэш добавлен</string>
+    <string name="incorrect_value">Вы ввели некорректное значение</string>
+    <string name="export">Экспорт</string>
+    <string name="importStr">Импорт</string>
+    <string name="cancel">Отмена</string>
+    <string name="hash_hint">Введите хеш</string>
+    <string name="back_to_checking">Вернуться к проверке</string>
+    <string name="export_success">Список успешно экспортирован</string>
+    <string name="import_success">Список успешно импортирован</string>
+    <string name="fio_failed">Ошибка при работе с файлом</string>
+    <string name="file_not_found">Файл не найден</string>
+    <string name="enter_file_name_without_txt">Имя файла без .txt</string>
+</resources>
