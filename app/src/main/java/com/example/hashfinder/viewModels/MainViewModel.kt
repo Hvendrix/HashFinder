@@ -8,12 +8,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
 
     private var _strHashList = MutableLiveData<String>()
-    val strHash: LiveData<String>
+    val strHashList: LiveData<String>
         get() = _strHashList
 
 
     private var _hashSetOfHashes = MutableLiveData<HashSet<String>>()
-
+    // геттер выписал отдельно getOrCreateHashList
 
     private var _strStatus = MutableLiveData<String>()
     val strStatus: LiveData<String>
@@ -27,6 +27,12 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun addToHashSet(strHash: String) {
         _hashSetOfHashes.value?.add(strHash)
     }
+
+
+    fun addToHashSet(hashSet: HashSet<String>) {
+        hashSet.forEach { _hashSetOfHashes.value?.add(it) }
+    }
+
 
     fun setHashSetOfHashes(hash: Hash) {
         _hashSetOfHashes.value = hash.hashSet

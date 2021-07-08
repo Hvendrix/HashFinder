@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/generateOne"
+        android:title="@string/generate_one" />
+    <item
+        android:id="@+id/generateList"
+        android:title="@string/generate_a_list" />
+</menu>

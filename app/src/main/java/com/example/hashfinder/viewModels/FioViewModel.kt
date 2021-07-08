@@ -10,11 +10,11 @@ class FioViewModel(application: Application) : AndroidViewModel(application) {
     // но как-то в итоге вышло, возможно чуть позже переделаю
     // через фабричный метод или вообще один класс оставлю
     private var _strHashList = MutableLiveData<String>()
-    val strShow: LiveData<String>
+    val strHashList: LiveData<String>
         get() = _strHashList
 
     private var _hashSetOfHashes = MutableLiveData<HashSet<String>>()
-
+    // геттер выписал отдельно getOrCreateHashList
 
     private var _strStatus = MutableLiveData<String>()
     val strStatus: LiveData<String>
@@ -28,13 +28,16 @@ class FioViewModel(application: Application) : AndroidViewModel(application) {
         _strHashList.value = strHash
     }
 
+
     fun setHashSetOfHashes(hash: Hash) {
         _hashSetOfHashes.value = hash.hashSet
     }
 
+
     fun setStatus(strStatus: String) {
         _strStatus.value = strStatus
     }
+
 
     fun getOrCreateHashList(): HashSet<String> {
         return if (_hashSetOfHashes.value != null) {

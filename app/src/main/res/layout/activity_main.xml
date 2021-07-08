@@ -9,16 +9,28 @@
             type="com.example.hashfinder.viewModels.MainViewModel" />
     </data>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStatus"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="35dp">
+
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         tools:context=".ui.MainActivity">
 
 
 
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnCheck"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -46,10 +58,11 @@
             android:hint="@string/hash_hint"
             android:inputType="textPersonName"
             android:gravity="center_horizontal"
-            android:text="FF12CD13AB32CB56"
+            android:text="@string/hash_example"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/btnFIOActivity" />
+            app:layout_constraintTop_toBottomOf="@+id/btnFIOActivity"
+            android:importantForAutofill="no" />
 
         <TextView
             android:id="@+id/txtStatus"
@@ -59,26 +72,23 @@
             android:text="@{viewModel.strStatus}"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toBottomOf="@+id/btnCheck" />
 
 
-        <ScrollView
-            android:id="@+id/scrollTxt"
+        <TextView
+            android:id="@+id/txtHashList"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fillViewport="true"
-            android:scrollbars="vertical"
-            app:layout_constraintTop_toBottomOf="@+id/txtStatus"
-            tools:layout_editor_absoluteX="-16dp">
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="@{viewModel.strHashList}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtStatus" />
 
-            <TextView
-                android:id="@+id/txtHashList"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
-                android:text="@{viewModel.strHash}"
-                android:layout_gravity="center_horizontal"
-                app:layout_constraintTop_toBottomOf="@+id/txtStatus" />
-        </ScrollView>
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </layout>

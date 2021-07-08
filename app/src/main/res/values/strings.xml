@@ -16,4 +16,7 @@
     <string name="fio_failed">Fio error</string>
     <string name="file_not_found">File not found</string>
     <string name="enter_file_name_without_txt">File Name without .txt</string>
+    <string name="generate_one">Generate one</string>
+    <string name="generate_a_list">Add multiple values</string>
+    <string name="hash_example">FF12CD13AB32CB56</string>
 </resources>

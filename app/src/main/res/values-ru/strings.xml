@@ -16,4 +16,7 @@
     <string name="fio_failed">Ошибка при работе с файлом</string>
     <string name="file_not_found">Файл не найден</string>
     <string name="enter_file_name_without_txt">Имя файла без .txt</string>
+    <string name="generate_one">Сгенерировать один</string>
+    <string name="generate_a_list">Добавить несколько значений</string>
+    <string name="hash_example">FF12CD13AB32CB56</string>
 </resources>
